@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 // import youtube from './components/YoutubeAPI';
+import Header from './components/Header';
 import VideoSearch from './components/VideoSearch';
 import CategoryList from './components/CategoryList';
 // import axios from 'axios';
@@ -21,7 +22,7 @@ export default class App extends Component {
 			`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=${API_KEY}`
 		);
 		const data = await api_call.json();
-		// console.log(data.items[0].id);
+		console.log(data.items[0].id);
 		this.setState({
 			videos: data.items
 		});
@@ -30,20 +31,21 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<div className="container" style={{ marginTop: '1em' }}>
-				<h1>hello try</h1>
+			<div className="container" style={{ marginTop: '1rem' }}>
+				<Header />
 				<VideoSearch getVideo={this.getVideo} />
 				{this.state.videos.map(video => {
 					return (
-						<div key={video.id}>
+						<div key={video.id} className="col-sm-3">
 							<iframe
-								width="560"
-								height="315"
-								src="https://www.youtube.com/embed/${video.id}"
+								width="100%"
+								height="auto"
+								src="https://www.youtube.com/embed/{video.id}"
 								frameBorder="0"
 								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 								allowFullScreen
 							/>
+							<p>{video.id}</p>
 							<p>{video.snippet.title}</p>
 						</div>
 					);
