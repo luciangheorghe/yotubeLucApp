@@ -35,12 +35,13 @@ export default class App extends Component {
 				<Header />
 				<VideoSearch getVideo={this.getVideo} />
 				{this.state.videos.map(video => {
+					console.log(video);
 					return (
 						<div key={video.id} className="col-sm-3">
 							<iframe
 								width="100%"
 								height="auto"
-								src="https://www.youtube.com/embed/{video.id}"
+								src={'https://www.youtube.com/embed/' + video.id}
 								frameBorder="0"
 								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 								allowFullScreen
