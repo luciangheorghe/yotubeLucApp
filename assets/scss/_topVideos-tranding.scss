@@ -1,0 +1,41 @@
+.top-videos{
+    .header{
+        height: 50px;
+    }
+    .topVideo-tranding{
+        padding: 25px 30px;
+        .topVideo{
+            .topVideos-title{
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+            .videosContainer{
+
+                display: flex;
+                flex-direction: row;
+                align-content: space-between;
+                flex-wrap: wrap;
+                .single-video{
+                    padding: 5px;
+                    width: 320px;
+                    .video-thumbnail{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .video-title{
+
+                    }
+                    .video-author{
+
+                    }
+                }
+            }
+        }
+        .whatstranding{
+            background: red;
+
+        }
+    }
+}
