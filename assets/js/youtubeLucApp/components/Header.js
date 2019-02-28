@@ -44,9 +44,9 @@ const Header = () => {
 					</ul>
 				</div>
 			</nav>
-			<div class="md-form mt-0 search">
+			<div className="md-form mt-0 search">
 				<input
-					class="form-control"
+					className="form-control"
 					type="text"
 					placeholder="Search"
 					aria-label="Search"

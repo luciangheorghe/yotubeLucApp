@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import VideoSearch from './components/VideoSearch';
 import VideoList from './components/VideoList';
+import WhatsTrending from './components/WhatsTrending';
 import CategoryList from './components/CategoryList';
 // import axios from 'axios';
 
@@ -76,74 +77,7 @@ export default class App extends Component {
 						</div>
 						<div className="row topVideo-tranding">
 							<VideoList />
-							<div className="col-md-2 whatstrending">
-								<h1 className="trendingTitle">whats trending</h1>
-								<div className="trendingContainer">
-									<div className="onetrend">
-										<div className="id">
-											<div className="id-align">ID</div>
-										</div>
-										<div className="hashtagname">#life</div>
-										<div className="likeno">
-											<div className="text-align">203k</div>
-										</div>
-									</div>
-									<div className="onetrend">
-										<div className="id">
-											<div className="id-align">ID</div>
-										</div>
-										<div className="hashtagname">#life</div>
-										<div className="likeno">
-											<div className="text-align">203k</div>
-										</div>
-									</div>
-									<div className="onetrend">
-										<div className="id">
-											<div className="id-align">ID</div>
-										</div>
-										<div className="hashtagname">#life</div>
-										<div className="likeno">
-											<div className="text-align">203k</div>
-										</div>
-									</div>
-									<div className="onetrend">
-										<div className="id">
-											<div className="id-align">ID</div>
-										</div>
-										<div className="hashtagname">#life</div>
-										<div className="likeno">
-											<div className="text-align">203k</div>
-										</div>
-									</div>
-									<div className="onetrend">
-										<div className="id">
-											<div className="id-align">ID</div>
-										</div>
-										<div className="hashtagname">#life</div>
-										<div className="likeno">
-											<div className="text-align">203k</div>
-										</div>
-									</div>
-									<div className="onetrend">
-										<div className="id">
-											<div className="id-align">ID</div>
-										</div>
-										<div className="hashtagname">#life</div>
-										<div className="likeno">
-											<div className="text-align">203k</div>
-										</div>
-									</div>
-									<div className="onetrend">
-										<div className="id">
-											<div className="id-align">ID</div>
-										</div>
-										<div className="hashtagname">#life</div>
-										<div className="likeno">
-											<div className="text-align">203k</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							<WhatsTrending />
 						</div>
 					</div>
 				</div>
