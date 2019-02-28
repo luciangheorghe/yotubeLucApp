@@ -55,7 +55,8 @@
                     text-transform: uppercase;
                     letter-spacing: 2px;
                 }
-                .edit-profile{
+
+                .edit-profile {
                     color: #fff;
                     padding: 10px 30px;
                     border: 2px solid #fff;
@@ -66,57 +67,69 @@
                     justify-content: center;
                     transition: all .3s ease-in-out;
 
-                    &:hover{
+                    &:hover {
                         border-color: #E08B6A;
                         color: #E08B6A;
                     }
                 }
             }
         }
-        .options{
+
+        .options {
             padding: 0 10px;
             color: #fff;
             display: flex;
             flex-direction: column;
-            .text{
+
+            .text {
                 letter-spacing: 1px;
             }
-            .videos{
+
+            .videos {
                 display: flex;
                 padding-top: 10px;
-                .fab{
+
+                .fab {
                     font-size: 1.2rem;
                     padding-right: 20px;
                 }
             }
-            .campaigns{
+
+            .campaigns {
                 display: flex;
                 padding-top: 25px;
-                .fas{
+
+                .fas {
                     font-size: 1.2rem;
                     padding-right: 20px;
                 }
             }
-            .favorites{
+
+            .favorites {
                 display: flex;
                 padding-top: 25px;
-                .fas{
+
+                .fas {
                     font-size: 1.2rem;
                     padding-right: 20px;
                 }
             }
-            .wishlist{
+
+            .wishlist {
                 display: flex;
                 padding-top: 25px;
-                .fas{
+
+                .fas {
                     font-size: 1.2rem;
                     padding-right: 20px;
                 }
             }
-            .signout{
+
+            .signout {
                 display: flex;
                 padding-top: 25px;
-                .fas{
+
+                .fas {
                     font-size: 1.2rem;
                     padding-right: 20px;
                 }

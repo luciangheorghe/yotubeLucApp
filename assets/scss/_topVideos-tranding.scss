@@ -1,55 +1,64 @@
-.top-videos{
-    .header{
-        
+.top-videos {
+    .header {
+
         height: 50px;
-        .header-container{
+
+        .header-container {
             display: flex;
             flex-direction: row;
-            a{
+
+            a {
                 color: #8A91A1;
                 padding-right: 100px;
             }
-            .search{
+
+            .search {
                 padding: 10px;
             }
         }
-        
+
     }
-    .topVideo-tranding{
+
+    .topVideo-tranding {
         padding: 25px 80px;
-        .topVideo{
+
+        .topVideo {
             padding-right: 90px;
-            .topVideos-title{
+
+            .topVideos-title {
                 font-size: 2rem;
                 text-transform: uppercase;
                 padding-bottom: 20px;
                 color: #8A91A1;
                 border-bottom: 2px solid rgba(138, 145, 161, 0.2);
             }
-            .videosContainer{
-                
+
+            .videosContainer {
+
                 padding: 50px 0 0 0;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-gap: 60px;
 
-                .single-video{
+                .single-video {
                     background: #fff;
                     border-radius: 7px;
                     cursor: pointer;
                     border-bottom: 3px solid #fff;
                     transition: all .4s ease-in-out;
-                    
-                    &:hover{
+
+                    &:hover {
                         border-bottom: 3px solid #E08B6A;
                         background: rgba(255, 255, 255, 1);
-                        -webkit-box-shadow: 29px 19px 135px 8px rgba(125,125,125,1);
-                        -moz-box-shadow: 29px 19px 135px 8px rgba(125,125,125,1);
-                        box-shadow: 29px 19px 135px 8px rgba(125,125,125,1);
+                        -webkit-box-shadow: 29px 19px 135px 8px rgba(125, 125, 125, 1);
+                        -moz-box-shadow: 29px 19px 135px 8px rgba(125, 125, 125, 1);
+                        box-shadow: 29px 19px 135px 8px rgba(125, 125, 125, 1);
                     }
-                    .video-thumbnail{
+
+                    .video-thumbnail {
                         border-radius: 7px;
-                        img{
+
+                        img {
                             -webkit-border-top-left-radius: 7px;
                             -webkit-border-top-right-radius: 7px;
                             -moz-border-radius-topleft: 7px;
@@ -60,7 +69,8 @@
                             object-fit: contain;
                         }
                     }
-                    .video-title{
+
+                    .video-title {
                         font-size: 1.5rem;
                         font-weight: 700;
                         letter-spacing: 1px;
@@ -70,7 +80,8 @@
                         border-bottom: 2px solid #D9D8D6;
                         text-transform: uppercase;
                     }
-                    .video-author{
+
+                    .video-author {
                         color: #D9D8D6;
                         font-size: 1rem;
                         margin: 20px 40px;
@@ -79,35 +90,38 @@
                 }
             }
         }
-        .whatstrending{
-            .trendingTitle{
+
+        .whatstrending {
+            .trendingTitle {
                 font-size: 2rem;
                 text-transform: uppercase;
                 padding-bottom: 20px;
                 color: #8A91A1;
                 border-bottom: 2px solid rgba(138, 145, 161, 0.2);
             }
-            .trendingContainer{
+
+            .trendingContainer {
                 margin-top: 50px;
                 -webkit-border-radius: 7px;
                 -moz-border-radius: 7px;
                 border-radius: 7px;
                 background: #f6f9fb;
-                
-                .onetrend{
+
+                .onetrend {
                     display: grid;
                     grid-template-columns: 45px 1fr 100px;
                     grid-column-gap: 10px;
                     grid-row-gap: 15px;
                     border-bottom: 2px solid #F1F6F8;
-                    border-left: 2px solid #f6f9fb;;
+                    border-left: 2px solid #f6f9fb;
+                    ;
                     transition: all .4s ease-in-out;
 
-                    .id{
+                    .id {
                         padding: 25px 25px 25px 0;
                         position: relative;
-                        
-                        .id-align{
+
+                        .id-align {
                             padding-left: 3px;
                             color: #8A91A1;
                             text-align: center;
@@ -119,15 +133,18 @@
                             transition: all .4s ease-in-out;
                         }
                     }
-                    .hashtagname{
+
+                    .hashtagname {
                         padding: 25px 0;
                         color: #8A91A1;
                         transition: all .4s ease-in-out;
                     }
-                    .likeno{
+
+                    .likeno {
                         padding: 25px 0 25px 0;
                         position: relative;
-                        .text-align{
+
+                        .text-align {
                             color: #8A91A1;
                             text-align: center;
                             padding: 5px 10px;
@@ -141,28 +158,32 @@
                             transition: all .4s ease-in-out;
                         }
                     }
-                    &:hover{
+
+                    &:hover {
                         border-left: 2px solid #E08B6A;
-                        .id{
-                            .id-align{
+
+                        .id {
+                            .id-align {
                                 color: #E08B6A;
                                 font-weight: 700;
                             }
                         }
-                        .hashtagname{
+
+                        .hashtagname {
                             color: #E08B6A;
                         }
-                        .likeno{
-                            .text-align{
+
+                        .likeno {
+                            .text-align {
                                 border: 2px solid #E08B6A;
                                 background: #E08B6A;
                                 color: #fff;
                             }
                         }
                     }
-                    
+
                 }
-                
+
             }
         }
     }
