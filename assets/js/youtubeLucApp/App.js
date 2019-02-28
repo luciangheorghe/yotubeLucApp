@@ -33,7 +33,7 @@ export default class App extends Component {
 		return (
 			<div className="container-fluid">
 				<div className="row main">
-					<div className="col-3 user-logo">
+					<div className="col-2 user-logo">
 						<div className="row logo">LucApp</div>
 						<div className="row user-info">
 							<div className="row user-pic-name">
@@ -69,7 +69,7 @@ export default class App extends Component {
 						</div>
 					</div>
 
-					<div className="col-9 top-videos">
+					<div className="col-10 top-videos">
 						<div className="row header">
 							<Header />
 						</div>
@@ -174,12 +174,51 @@ export default class App extends Component {
 												alt=""
 											/>
 										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
+										<p className="video-title">Create a weather app2</p>
+										<span className="video-author"> Jhon Smith </span>
 									</div>
 								</div>
 							</div>
-							<div className="col-md-3 whatstranding" />
+							<div className="col-md-3 whatstrending">
+								<h1 className="trendingTitle">whats trending</h1>
+								<div className="trendingContainer">
+									<div className="onetrend">
+										<div className="id">ID</div>
+										<div className="hashtagname">#life</div>
+										<div className="likeno">203k</div>
+									</div>
+									<div className="onetrend">
+										<div className="id">ID</div>
+										<div className="hashtagname">#life</div>
+										<div className="likeno">203k</div>
+									</div>
+									<div className="onetrend">
+										<div className="id">ID</div>
+										<div className="hashtagname">#life</div>
+										<div className="likeno">203k</div>
+									</div>
+									<div className="onetrend">
+										<div className="id">ID</div>
+										<div className="hashtagname">#life</div>
+										<div className="likeno">203k</div>
+									</div>
+									<div className="onetrend">
+										<div className="id">ID</div>
+										<div className="hashtagname">#life</div>
+										<div className="likeno">203k</div>
+									</div>
+									<div className="onetrend">
+										<div className="id">ID</div>
+										<div className="hashtagname">#life</div>
+										<div className="likeno">203k</div>
+									</div>
+									<div className="onetrend">
+										<div className="id">ID</div>
+										<div className="hashtagname">#life</div>
+										<div className="likeno">203k</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
