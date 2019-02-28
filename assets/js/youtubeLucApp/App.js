@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 // import youtube from './components/YoutubeAPI';
 import Header from './components/Header';
 import VideoSearch from './components/VideoSearch';
+import VideoList from './components/VideoList';
 import CategoryList from './components/CategoryList';
 // import axios from 'axios';
 
@@ -74,111 +75,7 @@ export default class App extends Component {
 							<Header />
 						</div>
 						<div className="row topVideo-tranding">
-							<div className="col-md-10 topVideo">
-								<h1 className="topVideos-title">Top Videos</h1>
-								<div className="videosContainer">
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Create a weather app2</p>
-										<p className="video-author"> Jhon Smith </p>
-									</div>
-								</div>
-							</div>
+							<VideoList />
 							<div className="col-md-2 whatstrending">
 								<h1 className="trendingTitle">whats trending</h1>
 								<div className="trendingContainer">
