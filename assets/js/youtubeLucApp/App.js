@@ -36,13 +36,13 @@ export default class App extends Component {
 					<div className="col-2 user-logo">
 						<div className="row logo">LucApp</div>
 						<div className="row user-info">
-							<div className="row user-pic-name">
-								<div className="user-pic">
-									<img src=".././img/luc-profile.jpg" alt="" />
+							<div className=" user-pic-name">
+								<div className="row user-pic">
+									<img src=".././img/luc-profile.jpg" alt="user-picture" />
 								</div>
 
-								<span className="user-name">Luc Gheorghe</span>
-								<div className="edit-profile">Edit Profile</div>
+								<span className=" user-name">Luc Gheorghe</span>
+								<div className=" edit-profile">Edit Profile</div>
 							</div>
 						</div>
 						<div className="options">
@@ -74,7 +74,7 @@ export default class App extends Component {
 							<Header />
 						</div>
 						<div className="row topVideo-tranding">
-							<div className="col-md-9 topVideo">
+							<div className="col-md-10 topVideo">
 								<h1 className="topVideos-title">Top Videos</h1>
 								<div className="videosContainer">
 									<div className="single-video">
@@ -84,88 +84,8 @@ export default class App extends Component {
 												alt=""
 											/>
 										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
-									</div>
-									<div className="single-video">
-										<div className="video-thumbnail">
-											<img
-												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
-												alt=""
-											/>
-										</div>
-										<p className="video-title">Title</p>
-										<span className="video-author"> author </span>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
 									</div>
 									<div className="single-video">
 										<div className="video-thumbnail">
@@ -175,47 +95,155 @@ export default class App extends Component {
 											/>
 										</div>
 										<p className="video-title">Create a weather app2</p>
-										<span className="video-author"> Jhon Smith </span>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
+									</div>
+									<div className="single-video">
+										<div className="video-thumbnail">
+											<img
+												src="https://i.ytimg.com/vi/qxWrnhZEuRU/mqdefault.jpg"
+												alt=""
+											/>
+										</div>
+										<p className="video-title">Create a weather app2</p>
+										<p className="video-author"> Jhon Smith </p>
 									</div>
 								</div>
 							</div>
-							<div className="col-md-3 whatstrending">
+							<div className="col-md-2 whatstrending">
 								<h1 className="trendingTitle">whats trending</h1>
 								<div className="trendingContainer">
 									<div className="onetrend">
-										<div className="id">ID</div>
+										<div className="id">
+											<div className="id-align">ID</div>
+										</div>
 										<div className="hashtagname">#life</div>
-										<div className="likeno">203k</div>
+										<div className="likeno">
+											<div className="text-align">203k</div>
+										</div>
 									</div>
 									<div className="onetrend">
-										<div className="id">ID</div>
+										<div className="id">
+											<div className="id-align">ID</div>
+										</div>
 										<div className="hashtagname">#life</div>
-										<div className="likeno">203k</div>
+										<div className="likeno">
+											<div className="text-align">203k</div>
+										</div>
 									</div>
 									<div className="onetrend">
-										<div className="id">ID</div>
+										<div className="id">
+											<div className="id-align">ID</div>
+										</div>
 										<div className="hashtagname">#life</div>
-										<div className="likeno">203k</div>
+										<div className="likeno">
+											<div className="text-align">203k</div>
+										</div>
 									</div>
 									<div className="onetrend">
-										<div className="id">ID</div>
+										<div className="id">
+											<div className="id-align">ID</div>
+										</div>
 										<div className="hashtagname">#life</div>
-										<div className="likeno">203k</div>
+										<div className="likeno">
+											<div className="text-align">203k</div>
+										</div>
 									</div>
 									<div className="onetrend">
-										<div className="id">ID</div>
+										<div className="id">
+											<div className="id-align">ID</div>
+										</div>
 										<div className="hashtagname">#life</div>
-										<div className="likeno">203k</div>
+										<div className="likeno">
+											<div className="text-align">203k</div>
+										</div>
 									</div>
 									<div className="onetrend">
-										<div className="id">ID</div>
+										<div className="id">
+											<div className="id-align">ID</div>
+										</div>
 										<div className="hashtagname">#life</div>
-										<div className="likeno">203k</div>
+										<div className="likeno">
+											<div className="text-align">203k</div>
+										</div>
 									</div>
 									<div className="onetrend">
-										<div className="id">ID</div>
+										<div className="id">
+											<div className="id-align">ID</div>
+										</div>
 										<div className="hashtagname">#life</div>
-										<div className="likeno">203k</div>
+										<div className="likeno">
+											<div className="text-align">203k</div>
+										</div>
 									</div>
 								</div>
 							</div>

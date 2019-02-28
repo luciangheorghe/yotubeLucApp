@@ -1,71 +1,168 @@
 .top-videos{
     .header{
+        
         height: 50px;
+        .header-container{
+            display: flex;
+            flex-direction: row;
+            a{
+                color: #8A91A1;
+                padding-right: 100px;
+            }
+            .search{
+                padding: 10px;
+            }
+        }
+        
     }
     .topVideo-tranding{
-        padding: 25px 30px;
+        padding: 25px 80px;
         .topVideo{
+            padding-right: 90px;
             .topVideos-title{
                 font-size: 2rem;
                 text-transform: uppercase;
                 padding-bottom: 20px;
                 color: #8A91A1;
-                border-bottom: 2px solid #8A91A1;
+                border-bottom: 2px solid rgba(138, 145, 161, 0.2);
             }
             .videosContainer{
-                padding: 30px 0 0 0;
+                
+                padding: 50px 0 0 0;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 20px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 60px;
+
                 .single-video{
-                    padding: 5px;
-                    // width: 320px;
+                    background: #fff;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    border-bottom: 3px solid #fff;
+                    transition: all .4s ease-in-out;
+                    
+                    &:hover{
+                        border-bottom: 3px solid #E08B6A;
+                        background: rgba(255, 255, 255, 1);
+                        -webkit-box-shadow: 29px 19px 135px 8px rgba(125,125,125,1);
+                        -moz-box-shadow: 29px 19px 135px 8px rgba(125,125,125,1);
+                        box-shadow: 29px 19px 135px 8px rgba(125,125,125,1);
+                    }
                     .video-thumbnail{
+                        border-radius: 7px;
                         img{
+                            -webkit-border-top-left-radius: 7px;
+                            -webkit-border-top-right-radius: 7px;
+                            -moz-border-radius-topleft: 7px;
+                            -moz-border-radius-topright: 7px;
+                            border-top-left-radius: 7px;
+                            border-top-right-radius: 7px;
                             width: 100%;
+                            object-fit: contain;
                         }
                     }
                     .video-title{
                         font-size: 1.5rem;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        color: #8A91A1;
+                        padding: 20px 0 10px 0;
+                        margin: 0 40px;
+                        border-bottom: 2px solid #D9D8D6;
+                        text-transform: uppercase;
                     }
                     .video-author{
+                        color: #D9D8D6;
                         font-size: 1rem;
+                        margin: 20px 40px;
+                        text-transform: capitalize;
                     }
                 }
             }
         }
         .whatstrending{
-            // background: red;
             .trendingTitle{
                 font-size: 2rem;
                 text-transform: uppercase;
                 padding-bottom: 20px;
                 color: #8A91A1;
-                border-bottom: 2px solid #8A91A1;
+                border-bottom: 2px solid rgba(138, 145, 161, 0.2);
             }
             .trendingContainer{
-                padding: 30px 0 0 0;
+                margin-top: 50px;
+                -webkit-border-radius: 7px;
+                -moz-border-radius: 7px;
+                border-radius: 7px;
+                background: #f6f9fb;
+                
                 .onetrend{
-                    background: #fff;
                     display: grid;
                     grid-template-columns: 45px 1fr 100px;
                     grid-column-gap: 10px;
                     grid-row-gap: 15px;
-                    padding: 5px;
-                    
+                    border-bottom: 2px solid #F1F6F8;
+                    border-left: 2px solid #f6f9fb;;
+                    transition: all .4s ease-in-out;
+
                     .id{
-                        padding: 35px 0;
-                        background: red;
+                        padding: 25px 25px 25px 0;
+                        position: relative;
+                        
+                        .id-align{
+                            padding-left: 3px;
+                            color: #8A91A1;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-right: -50%;
+                            transform: translate(-50%, -50%);
+                            transition: all .4s ease-in-out;
+                        }
                     }
                     .hashtagname{
-                        padding: 35px 0;
-                        background: yellow;
+                        padding: 25px 0;
+                        color: #8A91A1;
+                        transition: all .4s ease-in-out;
                     }
                     .likeno{
-                        padding: 35px 0;
-                        background: blue;
+                        padding: 25px 0 25px 0;
+                        position: relative;
+                        .text-align{
+                            color: #8A91A1;
+                            text-align: center;
+                            padding: 5px 10px;
+                            border: 2px solid;
+                            border-radius: 15px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-right: -50%;
+                            transform: translate(-50%, -50%);
+                            transition: all .4s ease-in-out;
+                        }
                     }
+                    &:hover{
+                        border-left: 2px solid #E08B6A;
+                        .id{
+                            .id-align{
+                                color: #E08B6A;
+                                font-weight: 700;
+                            }
+                        }
+                        .hashtagname{
+                            color: #E08B6A;
+                        }
+                        .likeno{
+                            .text-align{
+                                border: 2px solid #E08B6A;
+                                background: #E08B6A;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    
                 }
+                
             }
         }
     }

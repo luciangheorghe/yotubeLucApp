@@ -2,11 +2,8 @@ import React from 'react';
 
 const Header = () => {
 	return (
-		<div>
+		<div className="header-container">
 			<nav className="navbar navbar-expand-lg">
-				<a className="navbar-brand" href="#">
-					youtubeLucApp
-				</a>
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav mr-auto">
 						<li className="nav-item active">
@@ -16,7 +13,7 @@ const Header = () => {
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#">
-								Link
+								Top Videos
 							</a>
 						</li>
 						<li className="nav-item dropdown">
@@ -33,20 +30,28 @@ const Header = () => {
 							</a>
 							<div className="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a className="dropdown-item" href="#">
-									Action
+									Film and Animation
 								</a>
 								<a className="dropdown-item" href="#">
-									Another action
+									Short Movies
 								</a>
-								<div className="dropdown-divider" />
+
 								<a className="dropdown-item" href="#">
-									Something else here
+									Entertainment
 								</a>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</nav>
+			<div class="md-form mt-0 search">
+				<input
+					class="form-control"
+					type="text"
+					placeholder="Search"
+					aria-label="Search"
+				/>
+			</div>
 		</div>
 	);
 };
