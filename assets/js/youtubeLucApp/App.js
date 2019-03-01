@@ -7,7 +7,7 @@ import VideoList from './components/VideoList';
 import WhatsTrending from './components/WhatsTrending';
 import UserSide from './components/UserSide';
 import CategoryList from './components/CategoryList';
-// import axios from 'axios';
+import axios from 'axios';
 
 // https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=US&key={YOUR_API_KEY}
 // https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key={YOUR_API_KEY}
@@ -17,19 +17,41 @@ export default class App extends Component {
 	state = {
 		videos: []
 	};
-	getVideo = async e => {
-		const videoInfo = e.target.elements.videoInfo.value;
-		e.preventDefault();
-		console.log(videoInfo);
-		const api_call = await fetch(
-			`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=${API_KEY}`
-		);
-		const data = await api_call.json();
-		console.log(data.items[0].id);
-		this.setState({
-			videos: data.items
-		});
+
+	componentDidMount() {
+		var self = this;
+		axios
+			.get(
+				`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=${API_KEY}`
+			)
+			.then(function(data) {
+				console.log(data);
+				self.setState({
+					videos: data.items
+				});
+				console;
+			});
+		// 	const data = await api_call.json();
+		// 	console.log(data.items[0].id);
+		// 	this.setState({
+		// 		videos: data.items
+		// 	});
 		console.log(this.state.videos);
+	}
+
+	getVideo = async e => {
+		// const videoInfo = e.target.elements.videoInfo.value;
+		// e.preventDefault();
+		// console.log(videoInfo);
+		// const api_call = await fetch(
+		// 	`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=${API_KEY}`
+		// );
+		// const data = await api_call.json();
+		// console.log(data.items[0].id);
+		// this.setState({
+		// 	videos: data.items
+		// });
+		// console.log(this.state.videos);
 	};
 
 	render() {
@@ -43,7 +65,7 @@ export default class App extends Component {
 							<Header />
 						</div>
 						<div className="row topVideo-tranding">
-							<VideoList />
+							<VideoList getVideo={this.getVideo} />
 							<WhatsTrending />
 						</div>
 					</div>

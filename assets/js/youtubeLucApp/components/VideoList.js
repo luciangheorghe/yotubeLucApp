@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const VideoList = () => {
+const VideoList = props => {
 	return (
 		<div className="col-md-10 topVideo">
 			<h1 className="topVideos-title">Top Videos</h1>
