@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import youtube from './components/YoutubeAPI';
 import Header from './components/Header';
 import VideoSearch from './components/VideoSearch';
 import VideoList from './components/VideoList';
@@ -11,48 +10,41 @@ import axios from 'axios';
 
 // https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=US&key={YOUR_API_KEY}
 // https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key={YOUR_API_KEY}
+// https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&hl=es&regionCode=US&key={YOUR_API_KEY}
 const API_KEY = 'AIzaSyDINoVZF1uERv7i9nsC_LaIGZjqFCLC0SA';
+const videoCategory = 1;
 
 export default class App extends Component {
 	state = {
-		videos: []
+		alldata: [],
+		categories: []
 	};
 
 	componentDidMount() {
-		var self = this;
 		axios
 			.get(
-				`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=${API_KEY}`
+				`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=10&regionCode=US&videoCategoryId=${videoCategory}&key=${API_KEY}`
 			)
-			.then(function(data) {
-				console.log(data);
-				self.setState({
-					videos: data.items
+			.then(res => {
+				const alldata = res.data.items;
+				// console.log(alldata);
+				this.setState({
+					alldata
 				});
-				console;
 			});
-		// 	const data = await api_call.json();
-		// 	console.log(data.items[0].id);
-		// 	this.setState({
-		// 		videos: data.items
-		// 	});
-		console.log(this.state.videos);
+		axios
+			.get(
+				`https://www.googleapis.com/youtube/v3/videoCategories?part=snippet&regionCode=US&key=${API_KEY}`
+			)
+			.then(cat => {
+				const categories = cat.data.items;
+				console.log(categories);
+				this.setState({
+					categories
+				});
+			});
+		// console.log(this.state.alldata);
 	}
-
-	getVideo = async e => {
-		// const videoInfo = e.target.elements.videoInfo.value;
-		// e.preventDefault();
-		// console.log(videoInfo);
-		// const api_call = await fetch(
-		// 	`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=${API_KEY}`
-		// );
-		// const data = await api_call.json();
-		// console.log(data.items[0].id);
-		// this.setState({
-		// 	videos: data.items
-		// });
-		// console.log(this.state.videos);
-	};
 
 	render() {
 		return (
@@ -62,11 +54,12 @@ export default class App extends Component {
 
 					<div className="col-10 top-videos">
 						<div className="row header">
-							<Header />
+							<Header getCategories={this.state.categories} />
 						</div>
 						<div className="row topVideo-tranding">
-							<VideoList getVideo={this.getVideo} />
-							<WhatsTrending />
+							<VideoList getVideo={this.state.alldata} />
+
+							<WhatsTrending getTrends={this.state.alldata} />
 						</div>
 					</div>
 				</div>

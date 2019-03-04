@@ -21,7 +21,9 @@
 
     .topVideo-tranding {
         padding: 25px 80px;
-
+        height: 100vh;
+        overflow: auto;
+        
         .topVideo {
             padding-right: 90px;
 

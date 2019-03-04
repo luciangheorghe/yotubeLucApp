@@ -1,0 +1,122 @@
+.videoitem {
+    height: 100vh;
+    background: #edf4f7;
+    // padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .btn-info{
+        display: block;
+        width: 100px;
+        color: white;
+    }
+
+    .singleItemTitle {
+        font-size: 2rem;
+        text-align: center;
+        padding: 35px 0;
+        color: #8A91A1;
+    }
+
+    .singleItemVideo {
+        background: black;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        min-height: 450px;
+    }
+
+    .videoItemInfo {
+        display: flex;
+        flex-direction: column;
+        min-height: 148px;
+        
+
+        .videoItemTitle {
+            color: #8A91A1;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 35px 40px 15px 40px;
+        }
+
+        .extras {
+            color: #8A91A1;
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+            border-bottom: 1px solid #D9D8D6;
+
+            .views {
+                padding: 10px 0 10px 40px;
+                width: 50%;
+                font-size: 1.2rem;
+                // background: red;
+                display: flex;
+                align-items: center;
+            }
+
+            .thumbsUpDown {
+                padding-right: 40px;
+                width: 50%;
+                // background: yellow;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+
+                .thumbsUp {
+                    padding: 10px 40px 10px 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .thumbsUpIcon {
+                        .fas {
+                            padding: 10px;
+                            font-size: 1.5rem;
+                            transition: all .4s ease-in-out;
+                        }
+
+                        &:hover {
+                            color: #E08B6A;
+                        }
+                    }
+
+                    .thumbsUpNo {}
+                }
+
+                .thumbsDown {
+                    align-items: center;
+                    padding: 10px 40px 10px 0;
+                    display: flex;
+                    flex-direction: row;
+
+                    .thumbsDownIcon {
+                        .fas {
+                            padding: 10px;
+                            font-size: 1.5rem;
+                        }
+
+                        &:hover {
+                            color: #E08B6A;
+                        }
+                    }
+
+                    .thumbsDownNo {}
+                }
+            }
+        }
+    }
+
+    .commentsSection {
+        .commentsTitle {
+            color: #8A91A1;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 35px 40px 15px 40px;
+            min-height: 148px;
+        }
+    }
+}
